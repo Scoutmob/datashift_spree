@@ -61,6 +61,7 @@ module DatashiftSpree
 
       opts = options.dup
       opts[:mandatory] = ['sku', 'name', 'price']
+      puts "Options: #{opts}"
 
       loader.perform_load(input, opts)
     end
